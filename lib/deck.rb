@@ -10,7 +10,7 @@ class Deck
     end
 
     def high_ranking_cards
-        cards.value >= 11
+      cards.value >= 11
     end
 
   end
