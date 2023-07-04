@@ -13,4 +13,12 @@ class Deck
       cards.select { |card| card.rank >= 11 }
     end
 
+    def percent_high_rankings
+      high_ranking_cards.length / cards.length
+    end
+
+    def remove_card
+      cards.shift
+    end
+
   end
