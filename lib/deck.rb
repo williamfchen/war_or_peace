@@ -10,7 +10,7 @@ class Deck
     end
 
     def high_ranking_cards
-      cards.value >= 11
+      cards.select { |card| card.value >= 11 }
     end
 
   end
